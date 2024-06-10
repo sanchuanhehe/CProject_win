@@ -1,0 +1,11 @@
+[requires]
+#boost/1.85.0
+gtest/1.14.0
+glib/2.78.3
+
+[generators]
+CMakeToolchain
+CMakeDeps
+
+[layout]
+cmake_layout

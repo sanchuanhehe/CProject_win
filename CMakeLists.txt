@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.12)
+
+project(MyProject)
+
+# Add your source files here
+set(SOURCES 
+    main.c
+    src/kmp.c
+)
+
+# find_package(Boost)
+# find_package(GTest)
+# find_package(glib)
+
+# Add your header files here
+set(HEADERS 
+    ./include/kmp.h
+)
+# 定义 DEBUG 宏
+# target_compile_definitions(MyTargetName PRIVATE DEBUG)
+
+# Add any libraries or dependencies here
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+include_directories("C:/msys64/mingw64/include")
+
+# Set the output directory for the build artifacts
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out/build/X86_64)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# Add the executable target
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Link any libraries or dependencies
+target_link_libraries(${PROJECT_NAME} ${LIBRARY_OUTPUT_PATH})
+# target_link_libraries(${PROJECT_NAME} boost::boost gtest::gtest glib::glib)
