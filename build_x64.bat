@@ -12,8 +12,7 @@ REM 配置 CMake 项目
 cmake .. -G "Ninja" ^
     -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ^
     -DCMAKE_BUILD_TYPE=Debug ^
-    -DCMAKE_TOOLCHAIN_FILE="%CD%\Release\generators\conan_toolchain.cmake" ^
-    -DCMAKE_PREFIX_PATH="%CD%\Release\generators"
+    --preset conan-release
 
 REM 构建项目
 cmake --build . --config DEBUG
