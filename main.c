@@ -28,9 +28,11 @@
 #include <stdio.h>
 #include "kmp.h"
 #include <string.h>
+#include <windows.h>
 
 int main()
 {
+    SetConsoleOutputCP(CP_UTF8);
     char *s = "ababcabcacbab";
     char *p = "aaaaaaaab";
     Str str1 = {strlen(s), s};
