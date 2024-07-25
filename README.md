@@ -1,6 +1,6 @@
 # MyProject
 
-这是一个使用 KMP 算法的 C 语言示例工程，适用于 Windows 环境。
+这是一个使用 KMP 算法的 C 语言示例工程，适用于 Windows 环境,采用 CMake 生成构建工程,conan管理依赖项,VSCode编辑器开发,ninja构建工程.
 
 ## 目录结构
 
