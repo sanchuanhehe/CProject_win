@@ -1,6 +1,8 @@
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 cmake_minimum_required(VERSION 3.23)
 
 project(MyProject)
@@ -26,13 +28,10 @@ include_directories("C:/msys64/mingw64/include")
 
 # Set the output directory for the build artifacts
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out/)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Add the executable target
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Link any libraries or dependencies
 target_link_libraries(${PROJECT_NAME} ${LIBRARY_OUTPUT_PATH})
