@@ -29,7 +29,7 @@ CPROJECT_WIN
 
 ## 依赖项
 
-- [Conan](https://conan.io/) 
+- [Conan](https://conan.io/)
 官网下载
 - [CMake](https://cmake.org/)
 官网下载
@@ -73,3 +73,10 @@ cd out
 - main.c：主程序文件，包含 KMP 算法的实现。
 - include/kmp.h：KMP 算法的头文件。
 - src/kmp.c：KMP 算法的实现文件。
+- .clangd: LSP 服务器配置文件。
+- .vscode: Visual Studio Code 配置文件。
+- CMakeLists.txt：CMake 构建脚本。
+- conanfile.txt：Conan 依赖项配置文件。
+- build_x64.bat：构建项目的脚本。
+- conan_profile_x64：Conan 依赖项配置文件。
+- README.md：项目说明文件。
