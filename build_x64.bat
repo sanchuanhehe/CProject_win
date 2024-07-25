@@ -22,3 +22,7 @@ cd ../out
 
 echo ============Running MyProject.exe=============
 .\MyProject
+
+pause
+
+cd ..
