@@ -9,7 +9,7 @@ cmake .. -G "Ninja" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Debug 
 
 cmake --build . --config DEBUG
 
-cd ../out/build/X86_64/
+cd ../out
 
 echo ============Running MyProject.exe=============
 .\MyProject
