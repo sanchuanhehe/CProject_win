@@ -5,7 +5,7 @@
 ## 目录结构
 
 ```tree
-\CPROJECT_WIN
+CPROJECT_WIN
 ├───.cache
 │   └───clangd
 │       └───index
@@ -24,22 +24,6 @@
 │       └───generators
 ├───include
 ├───out
-│   └───build
-│       └───Configure preset using toolchain file
-│           ├───.cmake
-│           │   └───api
-│           │       └───v1
-│           │           └───query
-│           │               └───client-vscode
-│           └───CMakeFiles
-│               ├───3.29.2
-│               │   ├───CompilerIdC
-│               │   │   └───tmp
-│               │   └───CompilerIdCXX
-│               │       └───tmp
-│               ├───MyProject.dir
-│               │   └───src
-│               └───pkgRedirects
 └───src
 ```
 
