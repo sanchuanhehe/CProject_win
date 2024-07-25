@@ -24,7 +24,7 @@ set(HEADERS
 
 # Add any libraries or dependencies here
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-include_directories("C:/msys64/mingw64/include")
+include_directories("C:/msys64/mingw64/include")# 添加头文件路径, 用于查找头文件,minjw64是我的mingw64的安装路径
 
 # Set the output directory for the build artifacts
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out/)
