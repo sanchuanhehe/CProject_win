@@ -29,9 +29,17 @@ CPROJECT_WIN
 
 ## 依赖项
 
-- [Conan](https://conan.io/)
+- [Conan](https://conan.io/) 
+官网下载
 - [CMake](https://cmake.org/)
+官网下载
 - [Ninja](https://ninja-build.org/)
+
+```powershell
+pip install ninja
+```
+
+- 编译器:mingw64 gcc
 
 ## 构建和运行
 
