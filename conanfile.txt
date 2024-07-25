@@ -1,7 +1,5 @@
 [requires]
-#boost/1.85.0
-gtest/1.14.0
-glib/2.78.3
+cjson/1.7.18
 
 [generators]
 CMakeToolchain

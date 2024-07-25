@@ -1,12 +1,11 @@
 @echo off
-@REM conan install . --output-folder=build --build=missing --profile=conan_profile_x64
+conan install . --build=missing --profile=conan_profile_x64
 
 mkdir build
 
 cd build
 
-cmake .. -G "Ninja" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON 
-@REM -DCMAKE_BUILD_TYPE=Debug -DCMAKE_Toolchain_FILE="conan_paths.cmake"
+cmake .. -G "Ninja" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Debug -DCMAKE_Toolchain_FILE="conan_paths.cmake"
 
 cmake --build . --config DEBUG
 

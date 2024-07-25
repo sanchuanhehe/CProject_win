@@ -8,9 +8,7 @@ set(SOURCES
     src/kmp.c
 )
 
-# find_package(Boost)
-# find_package(GTest)
-# find_package(glib)
+find_package(cjson)
 
 # Add your header files here
 set(HEADERS 
@@ -24,7 +22,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 include_directories("C:/msys64/mingw64/include")
 
 # Set the output directory for the build artifacts
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out/build/X86_64)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out/)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Add the executable target
@@ -35,4 +33,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Link any libraries or dependencies
 target_link_libraries(${PROJECT_NAME} ${LIBRARY_OUTPUT_PATH})
-# target_link_libraries(${PROJECT_NAME} boost::boost gtest::gtest glib::glib)
+target_link_libraries(${PROJECT_NAME} cjson::cjson)
